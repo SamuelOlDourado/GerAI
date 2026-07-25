@@ -87,16 +87,3 @@ async function copiarCodigo() {
 
 const f = document.querySelector(".bloco-site");
 
-console.log(
-    f.offsetWidth,
-    f.offsetHeight,
-    getComputedStyle(f).display,
-    getComputedStyle(f).visibility,
-    getComputedStyle(f).opacity
-);
-
-const iframe = document.querySelector(".bloco-site");
-
-iframe.style.height = "600px";
-
-getComputedStyle(document.querySelector(".bloco-site")).height
