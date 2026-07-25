@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de páginas com IA</title>
+    <link rel="icon" href="/static/icons/LogoTopo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <p class="titulo-pequeno"><strong>Gerador de páginas</strong></p>
+
+    <h1>Crie sua página<br><span>Com um Prompt</span></h1>
+
+    <p class="subtitulo">Descreva seu negócio e veja a IA criar uma página profissional em segundos.</p>
+
+    <div class="caixa-entrada">
+        <textarea class="texto-pagina" maxlength="250" placeholder="Descreva seu negócio. Ex: Cafeteria, mercado..."></textarea>
+
+        <div class="contador"><span class="contador-atual">0</span>/250</div>
+
+        <button class="btn-gerar"><img src="/static/icons/send-horizontal.svg"></button>
+    </div>
+
+    <p class="mensagem-limite">Você atingiu o limite de caracteres.</p>
+
+    <div class="caixa-resultado">
+        <div class="painel-codigo">
+            <div class="topo-codigo">
+                <span><strong>Código HTML</strong></span>
+
+                <button class="btn-copiar" onclick="copiarCodigo()">
+                    <img src="/static/icons/copy.svg">
+                </button>
+            </div>
+
+            <pre class="bloco-codigo">
+                <code class="language-html"></code>
+            </pre>
+        </div>
+        <iframe class="bloco-site"></iframe>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+<script src="/static/script.js"></script>
+</body>
+</html>
