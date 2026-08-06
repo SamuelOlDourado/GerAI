@@ -24,7 +24,6 @@ O projeto foi desenvolvido com o objetivo de explorar a integração entre aplic
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
 
 ### Back-end
 - Python
